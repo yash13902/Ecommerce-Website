@@ -1,4 +1,5 @@
 const User = require("../models/userModels");
+const Product = require("../models/userModels");
 const ErrorHandler = require("../utils/errorHandler");
 const catchAsyncErrors = require("../middleware/catchAsyncErrors");
 const sendToken = require("../utils/jwtToken");
@@ -270,5 +271,3 @@ exports.deleteUser = catchAsyncErrors(async(req, res, next)=>{
     });
     
 });
-
-
